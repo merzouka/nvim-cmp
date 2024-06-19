@@ -288,7 +288,7 @@ view.on_entry_change = async.throttle(function(self)
       if not self:visible() then
         return
       end
-      if self.is_docs_view_pinned or config.get().view.docs.auto_open then
+      if self.is_docs_view_pinned or config.get().view.docs then
         self.docs_view:open(e, self:_get_entries_view():info())
       end
     end)))
